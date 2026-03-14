@@ -1,0 +1,54 @@
+/**
+ * LiMeiHua Lightning Wallet - Multi-platform Package Configuration
+ * 
+ * ชุดซอฟต์แวร์ชุดนี้ มีไว้เพื่อเป็นโครงสร้างพื้นฐานทางการเงินยุคใหม่
+ * เพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว หรือ LiMeiHua Grand Mother
+ * และ source code นี้สร้างโดย Mr.Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา)
+ * URL: https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
+ */
+
+{
+  "name": "limeihua-lightning-wallet",
+  "version": "1.0.0",
+  "description": "Multi-platform Lightning Network Wallet supporting BTC, USDT, and Taproot Assets",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:web\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:web": "cd web && npm run dev",
+    "dev:mobile": "cd mobile && npm start",
+    "dev:desktop": "cd desktop && npm start",
+    "build": "npm run build:backend && npm run build:web && npm run build:mobile && npm run build:desktop",
+    "build:backend": "cd backend && npm run build",
+    "build:web": "cd web && npm run build",
+    "build:mobile": "cd mobile && npm run build",
+    "build:desktop": "cd desktop && npm run build",
+    "test": "npm run test:backend && npm run test:web",
+    "test:backend": "cd backend && npm test",
+    "test:web": "cd web && npm test",
+    "lint": "npm run lint:backend && npm run lint:web",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:web": "cd web && npm run lint"
+  },
+  "workspaces": [
+    "backend",
+    "web",
+    "mobile",
+    "desktop",
+    "shared"
+  ],
+  "keywords": [
+    "lightning-network",
+    "wallet",
+    "bitcoin",
+    "usdt",
+    "taproot-assets",
+    "cryptocurrency",
+    "multi-platform"
+  ],
+  "author": "Mr. Kanutsanan Pongpanna",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
