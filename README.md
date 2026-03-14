@@ -1,840 +1,657 @@
-/**
- * LiMeiHua Lightning Wallet - README (28 Languages)
- * 
- * ชุดซอฟต์แวร์ชุดนี้ มีไว้เพื่อเป็นโครงสร้างพื้นฐานทางการเงินยุคใหม่
- * เพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว หรือ LiMeiHua Grand Mother
- * และ source code นี้สร้างโดย Mr.Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา)
- * URL: https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
- */
+# LiMeiHua Taproot Assets - Comprehensive Multi-Language Documentation
 
-# LiMeiHua Lightning Wallet - Multi-Platform Cryptocurrency Wallet
-
-## 🌍 Available Languages / ภาษาที่รองรับ
-
-- [English](#english)
-- [ไทย](#thai)
-- [中文 (Simplified)](#chinese-simplified)
-- [中文繁體 (Traditional)](#chinese-traditional)
-- [日本語](#japanese)
-- [한국어](#korean)
-- [Español](#spanish)
-- [Français](#french)
-- [Deutsch](#german)
-- [Português](#portuguese)
-- [Русский](#russian)
-- [العربية](#arabic)
-- [हिन्दी](#hindi)
-- [Tiếng Việt](#vietnamese)
-- [Bahasa Indonesia](#indonesian)
-- [Bahasa Melayu](#malay)
-- [Türkçe](#turkish)
-- [Italiano](#italian)
-- [Nederlands](#dutch)
-- [Polski](#polish)
-- [Svenska](#swedish)
-- [Українська](#ukrainian)
-- [Čeština](#czech)
-- [Română](#romanian)
-- [Ελληνικά](#greek)
-- [עברית](#hebrew)
-- [বাংলা](#bengali)
-- [Filipino](#filipino)
+> ชุดซอฟต์แวร์ชุดนี้ มีไว้เพื่อเป็นโครงสร้างพื้นฐานทางการเงินยุคใหม่เพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว หรือ LiMeiHua Grand Mother 
+> และ source code นี้สร้างโดย Mr.Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา) 
+> URL: https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
 
 ---
 
-## English
+## 📖 Table of Contents
 
-### 📱 LiMeiHua Lightning Wallet
-
-A comprehensive multi-platform cryptocurrency wallet supporting Bitcoin (BTC), Tether (USDT), and Taproot Assets tokens on the Lightning Network.
-
-**Supported Platforms:**
-- 🌐 Web (React + TypeScript)
-- 📱 Mobile (React Native - iOS/Android)
-- 🖥️ Desktop (Electron - Windows/Mac/Linux)
-
-### ✨ Features
-
-- **Multi-Currency Support**: BTC, USDT, and all Taproot Assets tokens
-- **Lightning Network Integration**: Fast and low-cost transactions
-- **Secure Wallet Management**: Create and manage multiple wallets
-- **QR Code Support**: Easy payment sharing and receiving
-- **Transaction History**: Complete transaction tracking
-- **Address Book**: Save and manage recipient addresses
-- **Exchange Rates**: Real-time cryptocurrency rates
-- **Fee Estimation**: Transparent fee calculation
-- **Cross-Platform**: Seamless experience across all devices
-
-### 🚀 Quick Start
-
-```bash
-# Install dependencies
-npm install
-
-# Development
-npm run dev
-
-# Build
-npm run build
-
-# Start production server
-npm start
-```
-
-### 📋 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/health` | Health check |
-| POST | `/api/wallets/create` | Create new wallet |
-| GET | `/api/wallets/:walletId` | Get wallet details |
-| GET | `/api/wallets` | List user wallets |
-| POST | `/api/wallets/:walletId/send` | Send payment |
-| GET | `/api/wallets/:walletId/transactions` | Get transaction history |
-| POST | `/api/estimate-fee` | Estimate transaction fee |
-| GET | `/api/exchange-rates` | Get exchange rates |
-
-### 🔒 Security
-
-- Non-custodial wallet (you control your keys)
-- End-to-end encryption
-- Secure key storage
-- Hardware wallet support (coming soon)
-- 2FA authentication (optional)
-
-### 📦 Project Structure
-
-```
-limeihua-lightning-wallet/
-├── backend/              # Node.js Express server
-├── web/                  # React web application
-├── mobile/               # React Native mobile app
-├── desktop/              # Electron desktop app
-├── shared/               # Shared utilities
-├── package.json          # Root package configuration
-└── README.md            # This file
-```
+- [🌐 Available Languages](#-available-languages)
+- [📚 Documentation by Language](#-documentation-by-language)
+- [🎯 Project Overview](#-project-overview)
+- [✨ Features](#-features)
+- [🚀 Getting Started](#-getting-started)
+- [💡 Use Cases](#-use-cases)
+- [🔧 Technical Stack](#-technical-stack)
+- [📊 Language Statistics](#-language-statistics)
 
 ---
 
-## ไทย
+## 🌐 Available Languages
 
-### 📱 กระเป๋าเงินไฟฟ้า LiMeiHua
+This project supports **40+ languages** across multiple regions:
 
-กระเป๋าเงินดิจิทัลแบบครบวงจรที่รองรับ Bitcoin (BTC), Tether (USDT) และ Taproot Assets tokens บน Lightning Network
+### ASEAN Region (9 Languages)
+🇹🇭 Thai | 🇱🇦 Lao | 🇲🇲 Burmese | 🇻🇳 Vietnamese | 🇰🇭 Khmer | 🇲🇾 Malay | 🇮🇩 Indonesian | 🇵🇭 Filipino | 🇱🇰 Tamil
 
-**แพลตฟอร์มที่รองรับ:**
-- 🌐 เว็บ (React + TypeScript)
-- 📱 มือถือ (React Native - iOS/Android)
-- 🖥️ เดสก์ทอป (Electron - Windows/Mac/Linux)
+### Other Regions (5 Languages)
+🇷🇺 Russian | 🇲🇳 Mongolian | 🇱🇰 Sinhala | 🇧🇹 Dzongkha | 🇳🇵 Nepali
 
-### ✨ ฟีเจอร์
+### India (21 Languages)
+🇮🇳 Hindi | Bengali | Telugu | Marathi | Tamil | Urdu | Gujarati | Kannada | Malayalam | Odia | Punjabi | Assamese | Maithili | Santali | Kashmiri | Nepali | Sindhi | Dogri | Manipuri | Bodo | Konkani
 
-- **รองรับหลายสกุลเงิน**: BTC, USDT และ Taproot Assets tokens ทั้งหมด
-- **การรวมเครือข่าย Lightning**: ธุรกรรมที่รวดเร็วและต้นทุนต่ำ
-- **การจัดการกระเป๋าเงินที่ปลอดภัย**: สร้างและจัดการกระเป๋าเงินหลายใบ
-- **รองรับ QR Code**: แชร์การชำระเงินและการรับเงินที่ง่าย
-- **ประวัติธุรกรรม**: ติดตามธุรกรรมที่สมบูรณ์
-- **สมุดที่อยู่**: บันทึกและจัดการที่อยู่ผู้รับ
-- **อัตราแลกเปลี่ยน**: อัตราคริปโตเคอร์เรนซี่แบบเรียลไทม์
-- **ประมาณค่าธรรมเนียม**: การคำนวณค่าธรรมเนียมที่โปร่งใส
-- **ข้ามแพลตฟอร์ม**: ประสบการณ์ที่ราบรื่นบนอุปกรณ์ทั้งหมด
-
-### 🚀 เริ่มต้นอย่างรวดเร็ว
-
-```bash
-# ติดตั้ง dependencies
-npm install
-
-# Development
-npm run dev
-
-# Build
-npm run build
-
-# เริ่มต้นเซิร์ฟเวอร์ production
-npm start
-```
+### Global (20+ Languages)
+🌍 English | 🇨🇳 Chinese (Simplified & Traditional) | 🇯🇵 Japanese | 🇰🇷 Korean | 🇪🇸 Spanish | 🇫🇷 French | 🇩🇪 German | 🇵🇹 Portuguese | 🇸🇦 Arabic | 🇹🇷 Turkish | 🇮🇹 Italian | 🇳🇱 Dutch | 🇵🇱 Polish | 🇸🇪 Swedish | 🇺🇦 Ukrainian | 🇨🇿 Czech | 🇷🇴 Romanian | 🇬🇷 Greek | 🇮🇱 Hebrew | 🇹🇿 Swahili
 
 ---
 
-## 中文 (Simplified)
+## 📚 Documentation by Language
 
-### 📱 LiMeiHua 闪电钱包
+### English Documentation
+**LiMeiHua Taproot Assets** is a modern financial infrastructure platform designed to support massive money flow for LiMeiHua Grand Mother. This comprehensive system enables users to create, manage, and trade Taproot Assets tokens on the Bitcoin Lightning Network.
 
-一个全面的多平台加密货币钱包，支持比特币 (BTC)、泰达币 (USDT) 和闪电网络上的 Taproot Assets 代币。
+**Key Features:**
+- Create custom Taproot Assets tokens with flexible parameters
+- Manage token supply (fixed, mintable, or burnable)
+- Calculate gas fees and transaction costs
+- Send and receive tokens on Lightning Network
+- Multi-platform support (Web, Mobile, Desktop)
+- World ID integration for enhanced security
+- Airdrop distribution system
+- Payment gateway integration
+- Lightning Node management
 
-**支持的平台：**
-- 🌐 网络 (React + TypeScript)
-- 📱 移动 (React Native - iOS/Android)
-- 🖥️ 桌面 (Electron - Windows/Mac/Linux)
-
-### ✨ 功能
-
-- **多币种支持**：BTC、USDT 和所有 Taproot Assets 代币
-- **闪电网络集成**：快速且低成本的交易
-- **安全的钱包管理**：创建和管理多个钱包
-- **二维码支持**：轻松分享和接收付款
-- **交易历史**：完整的交易跟踪
-- **地址簿**：保存和管理收款人地址
-- **汇率**：实时加密货币汇率
-- **费用估算**：透明的费用计算
-- **跨平台**：所有设备上的无缝体验
-
----
-
-## 中文繁體 (Traditional)
-
-### 📱 LiMeiHua 閃電錢包
-
-一個全面的多平台加密貨幣錢包，支持比特幣 (BTC)、泰達幣 (USDT) 和閃電網路上的 Taproot Assets 代幣。
-
-**支持的平台：**
-- 🌐 網路 (React + TypeScript)
-- 📱 行動 (React Native - iOS/Android)
-- 🖥️ 桌面 (Electron - Windows/Mac/Linux)
-
-### ✨ 功能
-
-- **多幣種支持**：BTC、USDT 和所有 Taproot Assets 代幣
-- **閃電網路整合**：快速且低成本的交易
-- **安全的錢包管理**：建立和管理多個錢包
-- **二維碼支持**：輕鬆分享和接收付款
-- **交易歷史**：完整的交易追蹤
-- **地址簿**：保存和管理收款人地址
-- **匯率**：即時加密貨幣匯率
-- **費用估算**：透明的費用計算
-- **跨平台**：所有裝置上的無縫體驗
+**Getting Started:**
+1. Visit the platform or install the application
+2. Connect your Lightning Network wallet
+3. Create your first Taproot Assets token
+4. Start managing your digital assets
 
 ---
 
-## 日本語
+### ไทย (Thai Documentation)
+**LiMeiHua Taproot Assets** เป็นแพลตฟอร์มโครงสร้างพื้นฐานทางการเงินสมัยใหม่ที่ออกแบบมาเพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว ระบบที่ครอบคลุมนี้ช่วยให้ผู้ใช้สามารถสร้าง จัดการ และซื้อขาย Taproot Assets tokens บน Bitcoin Lightning Network
 
-### 📱 LiMeiHua ライトニングウォレット
+**ฟีเจอร์หลัก:**
+- สร้าง Taproot Assets tokens ที่กำหนดเองได้
+- จัดการปริมาณ token (fixed, mintable, burnable)
+- คำนวณค่าแก๊สและค่าธุรกรรม
+- ส่งและรับ tokens บน Lightning Network
+- รองรับหลายแพลตฟอร์ม (Web, Mobile, Desktop)
+- บูรณาการ World ID เพื่อความปลอดภัยที่ดีขึ้น
+- ระบบแจกจ่าย Airdrop
+- บูรณาการ Payment Gateway
+- จัดการ Lightning Node
 
-ビットコイン (BTC)、テザー (USDT)、およびライトニングネットワーク上の Taproot Assets トークンをサポートする包括的なマルチプラットフォーム暗号資産ウォレット。
-
-**サポートされているプラットフォーム：**
-- 🌐 ウェブ (React + TypeScript)
-- 📱 モバイル (React Native - iOS/Android)
-- 🖥️ デスクトップ (Electron - Windows/Mac/Linux)
-
-### ✨ 機能
-
-- **マルチ通貨サポート**：BTC、USDT、およびすべての Taproot Assets トークン
-- **ライトニングネットワーク統合**：高速で低コストのトランザクション
-- **安全なウォレット管理**：複数のウォレットを作成および管理
-- **QR コードサポート**：支払いの共有と受け取りが簡単
-- **取引履歴**：完全な取引追跡
-- **アドレス帳**：受取人アドレスを保存および管理
-- **為替レート**：リアルタイムの暗号資産レート
-- **手数料推定**：透明な手数料計算
-- **クロスプラットフォーム**：すべてのデバイスでシームレスな体験
+**เริ่มต้นใช้งาน:**
+1. เยี่ยมชมแพลตฟอร์มหรือติดตั้งแอปพลิเคชัน
+2. เชื่อมต่อ Lightning Network wallet ของคุณ
+3. สร้าง Taproot Assets token แรกของคุณ
+4. เริ่มจัดการสินทรัพย์ดิจิทัลของคุณ
 
 ---
 
-## 한국어
+### ລາວ (Lao Documentation)
+**LiMeiHua Taproot Assets** ແມ່ນແພັດຟອມໂຄງສ້າງພື້ນຖານດ້ານການເງິນສະໄໝໃໝ່ທີ່ອອກແບບມາເພື່ອສະໜັບສະໜູນການໄຫຼຂອງເງິນຈໍານວນຫຼວງຫຼາຍສໍາລັບທ່ານຜູ້ເຖົ້າຫລີ່ເຫມຍຮວົ (LiMeiHua Grand Mother)
 
-### 📱 LiMeiHua 라이트닝 지갑
-
-비트코인 (BTC), 테더 (USDT) 및 라이트닝 네트워크의 Taproot Assets 토큰을 지원하는 포괄적인 멀티플랫폼 암호화폐 지갑입니다.
-
-**지원되는 플랫폼:**
-- 🌐 웹 (React + TypeScript)
-- 📱 모바일 (React Native - iOS/Android)
-- 🖥️ 데스크톱 (Electron - Windows/Mac/Linux)
-
-### ✨ 기능
-
-- **다중 통화 지원**: BTC, USDT 및 모든 Taproot Assets 토큰
-- **라이트닝 네트워크 통합**: 빠르고 저비용 거래
-- **안전한 지갑 관리**: 여러 지갑 생성 및 관리
-- **QR 코드 지원**: 쉬운 결제 공유 및 수신
-- **거래 내역**: 완전한 거래 추적
-- **주소록**: 수취인 주소 저장 및 관리
-- **환율**: 실시간 암호화폐 환율
-- **수수료 추정**: 투명한 수수료 계산
-- **크로스 플랫폼**: 모든 기기에서 원활한 경험
+**ຄຸນສົມບັດຫຼັກ:**
+- ສ້າງ Taproot Assets tokens ທີ່ກໍາຫນົດເອງໄດ້
+- ຈັດການປະລິມານ token (fixed, mintable, burnable)
+- ຄໍານວນຄ່າແກ໊ສແລະຄ່າທຸລະກໍາ
+- ສົ່ງແລະຮັບ tokens ໃນ Lightning Network
+- ສະໜັບສະໜູນຫຼາຍແພັດຟອມ (Web, Mobile, Desktop)
+- ປະສົມປະສານ World ID ສໍາລັບຄວາມປອດໄພທີ່ດີຂຶ້ນ
+- ລະບົບແຈກຢາຍ Airdrop
+- ປະສົມປະສານ Payment Gateway
+- ຈັດການ Lightning Node
 
 ---
 
-## Español
+### မြန်မာ (Burmese Documentation)
+**LiMeiHua Taproot Assets** သည် LiMeiHua Grand Mother အတွက် 거대한ငွေ့စီးဆင်းမှုကို ထောက်ခံရန် ဒီဇိုင်းထုတ်ထားသော ခေတ်သစ် ငွေကြေးအခြေခံ ကွန်ပ်ျူတာ ပလက်ဖောင်းဖြစ်သည်။
 
-### 📱 LiMeiHua Cartera Lightning
-
-Una cartera de criptomonedas multiplataforma integral que admite Bitcoin (BTC), Tether (USDT) y tokens de Taproot Assets en Lightning Network.
-
-**Plataformas compatibles:**
-- 🌐 Web (React + TypeScript)
-- 📱 Móvil (React Native - iOS/Android)
-- 🖥️ Escritorio (Electron - Windows/Mac/Linux)
-
-### ✨ Características
-
-- **Soporte multimoneda**: BTC, USDT y todos los tokens de Taproot Assets
-- **Integración de Lightning Network**: Transacciones rápidas y de bajo costo
-- **Gestión segura de cartera**: Crear y administrar múltiples carteras
-- **Soporte de código QR**: Fácil compartición y recepción de pagos
-- **Historial de transacciones**: Seguimiento completo de transacciones
-- **Libreta de direcciones**: Guardar y administrar direcciones de destinatarios
-- **Tasas de cambio**: Tasas de criptomonedas en tiempo real
-- **Estimación de tarifas**: Cálculo transparente de tarifas
-- **Multiplataforma**: Experiencia perfecta en todos los dispositivos
+**အဓိက ဝိသေသလက္ခဏာများ:**
+- စိတ်ကြိုက် Taproot Assets tokens များ ဖန်တီးခြင်း
+- Token ပမာណ ကိုင်တွယ်ခြင်း (fixed, mintable, burnable)
+- ဂ်ဆ ကုန်ကျစရိတ် တွက်ချက်ခြင်း
+- Lightning Network တွင် tokens ပို့ခြင်း နှင့် လက်ခံခြင်း
+- အများအပြား ပလက်ဖောင်း ထောက်ခံခြင်း (Web, Mobile, Desktop)
+- ကောင်းမွန်သော လုံခြုံရေးအတွက် World ID ပေါင်းစပ်ခြင်း
+- Airdrop ဖြန့်ဝေမှု စနစ်
+- Payment Gateway ပေါင်းစပ်ခြင်း
+- Lightning Node စီမံခန့်ခွဲခြင်း
 
 ---
 
-## Français
+### Tiếng Việt (Vietnamese Documentation)
+**LiMeiHua Taproot Assets** là một nền tảng cơ sở hạ tầng tài chính hiện đại được thiết kế để hỗ trợ dòng tiền khổng lồ cho bà LiMeiHua. Hệ thống toàn diện này cho phép người dùng tạo, quản lý và giao dịch các token Taproot Assets trên Bitcoin Lightning Network.
 
-### 📱 LiMeiHua Portefeuille Lightning
-
-Un portefeuille de crypto-monnaies multiplateforme complet prenant en charge Bitcoin (BTC), Tether (USDT) et les jetons Taproot Assets sur Lightning Network.
-
-**Plates-formes prises en charge:**
-- 🌐 Web (React + TypeScript)
-- 📱 Mobile (React Native - iOS/Android)
-- 🖥️ Bureau (Electron - Windows/Mac/Linux)
-
-### ✨ Caractéristiques
-
-- **Support multi-devises**: BTC, USDT et tous les jetons Taproot Assets
-- **Intégration Lightning Network**: Transactions rapides et peu coûteuses
-- **Gestion sécurisée du portefeuille**: Créer et gérer plusieurs portefeuilles
-- **Support du code QR**: Partage et réception faciles des paiements
-- **Historique des transactions**: Suivi complet des transactions
-- **Carnet d'adresses**: Enregistrer et gérer les adresses des destinataires
-- **Taux de change**: Taux de crypto-monnaie en temps réel
-- **Estimation des frais**: Calcul transparent des frais
-- **Multiplateforme**: Expérience transparente sur tous les appareils
+**Các Tính Năng Chính:**
+- Tạo các token Taproot Assets tùy chỉnh
+- Quản lý nguồn cung token (cố định, có thể tạo, có thể đốt)
+- Tính toán phí gas và chi phí giao dịch
+- Gửi và nhận token trên Lightning Network
+- Hỗ trợ nhiều nền tảng (Web, Mobile, Desktop)
+- Tích hợp World ID để tăng cường bảo mật
+- Hệ thống phân phối Airdrop
+- Tích hợp Payment Gateway
+- Quản lý Lightning Node
 
 ---
 
-## Deutsch
+### ខ្មែរ (Khmer Documentation)
+**LiMeiHua Taproot Assets** ជាវេទិកាហិរញ្ញវត្ថុលោកទំនើបដែលត្រូវបានរចនាឡើងដើម្បីគាំទ្របរិមាណលុយដ៏ច្រើនសម្រាប់ម្ដាយលីមីហួ។ ប្រព័ន្ធលម្អិតនេះអនុញ្ញាតឱ្យអ្នកប្រើប្រាស់បង្កើត គ្រប់គ្រង និងលក់ទិញ Taproot Assets tokens នៅលើបណ្តាញ Bitcoin Lightning Network។
 
-### 📱 LiMeiHua Lightning Wallet
-
-Ein umfassendes Multi-Plattform-Kryptowährungs-Wallet, das Bitcoin (BTC), Tether (USDT) und Taproot Assets-Token im Lightning Network unterstützt.
-
-**Unterstützte Plattformen:**
-- 🌐 Web (React + TypeScript)
-- 📱 Mobil (React Native - iOS/Android)
-- 🖥️ Desktop (Electron - Windows/Mac/Linux)
-
-### ✨ Funktionen
-
-- **Multi-Währungsunterstützung**: BTC, USDT und alle Taproot Assets-Token
-- **Lightning Network Integration**: Schnelle und kostengünstige Transaktionen
-- **Sichere Wallet-Verwaltung**: Erstellen und Verwalten mehrerer Wallets
-- **QR-Code-Unterstützung**: Einfaches Teilen und Empfangen von Zahlungen
-- **Transaktionsverlauf**: Vollständige Transaktionsverfolgung
-- **Adressbuch**: Empfängeradressen speichern und verwalten
-- **Wechselkurse**: Echtzeit-Kryptowährungskurse
-- **Gebührenschätzung**: Transparente Gebührenberechnung
-- **Plattformübergreifend**: Nahtlose Erfahrung auf allen Geräten
+**លក្ខណៈពិសេសចម្បង:**
+- បង្កើត Taproot Assets tokens ដែលបានកែប្រែ
+- គ្រប់គ្រងការផ្គត់ផ្គង់ token (ថេរ មិនថេរ ឬអាចដុតបាន)
+- គណនាថ្លៃឧស្ម័ន និងថ្លៃប្រតិបត្តិការ
+- ផ្ញើ និងទទួល tokens នៅលើបណ្តាញ Lightning
+- គាំទ្របេតិកបទច្រើន (Web Mobile Desktop)
+- ការរួមបញ្ចូល World ID សម្រាប់សន្តិសុខប្រសើរ
+- ប្រព័ន្ធចែកចាយ Airdrop
+- ការរួមបញ្ចូល Payment Gateway
+- ការគ្រប់គ្រង Lightning Node
 
 ---
 
-## Português
+### Bahasa Melayu (Malay Documentation)
+**LiMeiHua Taproot Assets** ialah platform infrastruktur kewangan moden yang dirancang untuk menyokong aliran wang yang besar untuk Nenek LiMeiHua. Sistem komprehensif ini membolehkan pengguna membuat, menguruskan, dan berdagang token Taproot Assets di Rangkaian Bitcoin Lightning.
 
-### 📱 LiMeiHua Carteira Lightning
-
-Uma carteira de criptomoedas multiplataforma abrangente que suporta Bitcoin (BTC), Tether (USDT) e tokens Taproot Assets na Lightning Network.
-
-**Plataformas suportadas:**
-- 🌐 Web (React + TypeScript)
-- 📱 Móvel (React Native - iOS/Android)
-- 🖥️ Desktop (Electron - Windows/Mac/Linux)
-
-### ✨ Recursos
-
-- **Suporte multmoeda**: BTC, USDT e todos os tokens Taproot Assets
-- **Integração Lightning Network**: Transações rápidas e de baixo custo
-- **Gerenciamento seguro de carteira**: Criar e gerenciar múltiplas carteiras
-- **Suporte a código QR**: Compartilhamento e recebimento fáceis de pagamentos
-- **Histórico de transações**: Rastreamento completo de transações
-- **Catálogo de endereços**: Salvar e gerenciar endereços de destinatários
-- **Taxas de câmbio**: Taxas de criptomoedas em tempo real
-- **Estimativa de taxas**: Cálculo transparente de taxas
-- **Multiplataforma**: Experiência perfeita em todos os dispositivos
+**Ciri-Ciri Utama:**
+- Buat token Taproot Assets tersuai
+- Urus bekalan token (tetap, boleh dicetak, boleh dibakar)
+- Kira bayaran gas dan kos transaksi
+- Hantar dan terima token di Rangkaian Lightning
+- Sokongan berbilang platform (Web, Mobile, Desktop)
+- Integrasi World ID untuk keselamatan yang lebih baik
+- Sistem pengedaran Airdrop
+- Integrasi Payment Gateway
+- Pengurusan Lightning Node
 
 ---
 
-## Русский
+### Bahasa Indonesia (Indonesian Documentation)
+**LiMeiHua Taproot Assets** adalah platform infrastruktur keuangan modern yang dirancang untuk mendukung aliran uang besar untuk Nenek LiMeiHua. Sistem komprehensif ini memungkinkan pengguna membuat, mengelola, dan memperdagangkan token Taproot Assets di Jaringan Bitcoin Lightning.
 
-### 📱 LiMeiHua Lightning Кошелек
-
-Комплексный кроссплатформенный кошелек для криптовалют, поддерживающий Bitcoin (BTC), Tether (USDT) и токены Taproot Assets в сети Lightning Network.
-
-**Поддерживаемые платформы:**
-- 🌐 Веб (React + TypeScript)
-- 📱 Мобильный (React Native - iOS/Android)
-- 🖥️ Рабочий стол (Electron - Windows/Mac/Linux)
-
-### ✨ Функции
-
-- **Поддержка нескольких валют**: BTC, USDT и все токены Taproot Assets
-- **Интеграция Lightning Network**: Быстрые и недорогие транзакции
-- **Безопасное управление кошельком**: Создание и управление несколькими кошельками
-- **Поддержка QR-кода**: Легкое совместное использование и получение платежей
-- **История транзакций**: Полное отслеживание транзакций
-- **Адресная книга**: Сохранение и управление адресами получателей
-- **Обменные курсы**: Курсы криптовалют в реальном времени
-- **Оценка комиссий**: Прозрачный расчет комиссий
-- **Кроссплатформенность**: Безупречный опыт на всех устройствах
+**Fitur Utama:**
+- Buat token Taproot Assets yang dapat disesuaikan
+- Kelola pasokan token (tetap, dapat dicetak, dapat dibakar)
+- Hitung biaya gas dan biaya transaksi
+- Kirim dan terima token di Jaringan Lightning
+- Dukungan multi-platform (Web, Mobile, Desktop)
+- Integrasi World ID untuk keamanan yang lebih baik
+- Sistem distribusi Airdrop
+- Integrasi Payment Gateway
+- Manajemen Lightning Node
 
 ---
 
-## العربية
+### Filipino (Filipino Documentation)
+**LiMeiHua Taproot Assets** ay isang modernong platform ng financial infrastructure na dinisenyo upang suportahan ang malaking daloy ng pera para sa LiMeiHua Grand Mother. Ang komprehensibong sistemang ito ay nagbibigay-daan sa mga user na lumikha, pamahalaan, at magbenta ng Taproot Assets tokens sa Bitcoin Lightning Network.
 
-### 📱 محفظة LiMeiHua Lightning
-
-محفظة عملات مشفرة شاملة متعددة المنصات تدعم Bitcoin (BTC) و Tether (USDT) و رموز Taproot Assets على شبكة Lightning Network.
-
-**المنصات المدعومة:**
-- 🌐 ويب (React + TypeScript)
-- 📱 جوال (React Native - iOS/Android)
-- 🖥️ سطح المكتب (Electron - Windows/Mac/Linux)
-
-### ✨ المميزات
-
-- **دعم متعدد العملات**: BTC و USDT وجميع رموز Taproot Assets
-- **تكامل شبكة Lightning**: معاملات سريعة وقليلة التكلفة
-- **إدارة محفظة آمنة**: إنشاء وإدارة محافظ متعددة
-- **دعم رمز الاستجابة السريعة**: مشاركة واستقبال المدفوعات بسهولة
-- **سجل المعاملات**: تتبع كامل للمعاملات
-- **دفتر العناوين**: حفظ وإدارة عناوين المستقبلين
-- **أسعار الصرف**: أسعار العملات المشفرة في الوقت الفعلي
-- **تقدير الرسوم**: حساب الرسوم الشفاف
-- **متعدد المنصات**: تجربة سلسة على جميع الأجهزة
+**Pangunahing Mga Katangian:**
+- Lumikha ng mga customized Taproot Assets tokens
+- Pamahalaan ang supply ng token (fixed, mintable, burnable)
+- Kalkulahin ang gas fees at transaction costs
+- Magpadala at makatanggap ng tokens sa Lightning Network
+- Suporta sa maraming platform (Web, Mobile, Desktop)
+- Pagsasama ng World ID para sa mas magandang seguridad
+- Sistema ng Airdrop distribution
+- Pagsasama ng Payment Gateway
+- Pamamahala ng Lightning Node
 
 ---
 
-## हिन्दी
+### தமிழ் (Tamil Documentation)
+**LiMeiHua Taproot Assets** என்பது LiMeiHua Grand Mother க்கான பெரிய பணப்புழக்கத்தை ஆதரிக்க வடிவமைக்கப்பட்ட ஒரு நவீன நிதி உள்கட்டமைப்பு தளம். இந்த விரிவான அமைப்பு பயனர்களை Taproot Assets டோக்கன்களை உருவாக்க, நிர்வகிக்க மற்றும் Bitcoin Lightning Network இல் வர்த்தகம் செய்ய அனுமதிக்கிறது.
 
-### 📱 LiMeiHua Lightning वॉलेट
-
-एक व्यापक मल्टी-प्लेटफॉर्म क्रिप्टोकरेंसी वॉलेट जो Bitcoin (BTC), Tether (USDT) और Lightning Network पर Taproot Assets टोकन का समर्थन करता है।
-
-**समर्थित प्लेटफॉर्म:**
-- 🌐 वेब (React + TypeScript)
-- 📱 मोबाइल (React Native - iOS/Android)
-- 🖥️ डेस्कटॉप (Electron - Windows/Mac/Linux)
-
-### ✨ विशेषताएं
-
-- **मल्टी-करेंसी समर्थन**: BTC, USDT और सभी Taproot Assets टोकन
-- **Lightning Network एकीकरण**: तेजी और कम लागत वाले लेनदेन
-- **सुरक्षित वॉलेट प्रबंधन**: कई वॉलेट बनाएं और प्रबंधित करें
-- **QR कोड समर्थन**: आसान भुगतान साझाकरण और प्राप्ति
-- **लेनदेन इतिहास**: पूर्ण लेनदेन ट्रैकिंग
-- **पता पुस्तिका**: प्राप्तकर्ता पते सहेजें और प्रबंधित करें
-- **विनिमय दर**: रीयल-टाइम क्रिप्टोकरेंसी दरें
-- **शुल्क अनुमान**: पारदर्शी शुल्क गणना
-- **क्रॉस-प्लेटफॉर्म**: सभी उपकरणों पर निर्बाध अनुभव
+**முக்கிய அம்சங்கள்:**
+- தனிப்பயனாக்கப்பட்ட Taproot Assets டோக்கன்களை உருவாக்கவும்
+- டோக்கன் விநியோகத்தை நிர்வகிக்கவும் (நிலையான, மிண்டபல், எரியக்கூடிய)
+- வாயு கட்டணம் மற்றும் பரிவர்த்தனை செலவுகளைக் கணக்கிடவும்
+- Lightning Network இல் டோக்கன்களை அனுப்பி பெறவும்
+- பல-தளம் ஆதரவு (Web, Mobile, Desktop)
+- சிறந்த பாதுகாப்பிற்கான World ID ஒருங்கிணைப்பு
+- Airdrop விநியோக அமைப்பு
+- Payment Gateway ஒருங்கிணைப்பு
+- Lightning Node நிர்வாகம்
 
 ---
 
-## Tiếng Việt
+### Русский (Russian Documentation)
+**LiMeiHua Taproot Assets** - это современная платформа финансовой инфраструктуры, разработанная для поддержки огромного потока денежных средств для бабушки LiMeiHua. Эта комплексная система позволяет пользователям создавать, управлять и торговать токенами Taproot Assets в сети Bitcoin Lightning Network.
 
-### 📱 Ví LiMeiHua Lightning
-
-Một ví tiền điện tử đa nền tảng toàn diện hỗ trợ Bitcoin (BTC), Tether (USDT) và các token Taproot Assets trên Lightning Network.
-
-**Các nền tảng được hỗ trợ:**
-- 🌐 Web (React + TypeScript)
-- 📱 Di động (React Native - iOS/Android)
-- 🖥️ Máy tính để bàn (Electron - Windows/Mac/Linux)
-
-### ✨ Các tính năng
-
-- **Hỗ trợ đa tiền tệ**: BTC, USDT và tất cả các token Taproot Assets
-- **Tích hợp Lightning Network**: Giao dịch nhanh và chi phí thấp
-- **Quản lý ví an toàn**: Tạo và quản lý nhiều ví
-- **Hỗ trợ mã QR**: Chia sẻ và nhận thanh toán dễ dàng
-- **Lịch sử giao dịch**: Theo dõi giao dịch hoàn chỉnh
-- **Sổ địa chỉ**: Lưu và quản lý địa chỉ người nhận
-- **Tỷ giá hối đoái**: Tỷ giá tiền điện tử thời gian thực
-- **Ước tính phí**: Tính toán phí minh bạch
-- **Đa nền tảng**: Trải nghiệm liền mạch trên tất cả các thiết bị
+**Основные возможности:**
+- Создание пользовательских токенов Taproot Assets
+- Управление предложением токенов (фиксированное, чеканка, сжигание)
+- Расчет комиссий за газ и стоимости транзакций
+- Отправка и получение токенов в сети Lightning Network
+- Поддержка нескольких платформ (Web, Mobile, Desktop)
+- Интеграция World ID для повышенной безопасности
+- Система распределения Airdrop
+- Интеграция Payment Gateway
+- Управление узлом Lightning
 
 ---
 
-## Bahasa Indonesia
+### हिन्दी (Hindi Documentation)
+**LiMeiHua Taproot Assets** एक आधुनिक वित्तीय बुनियादी ढांचा मंच है जो LiMeiHua Grand Mother के लिए भारी मात्रा में धन प्रवाह का समर्थन करने के लिए डिज़ाइन किया गया है। यह व्यापक प्रणाली उपयोगकर्ताओं को Taproot Assets टोकन बनाने, प्रबंधित करने और Bitcoin Lightning Network पर व्यापार करने की अनुमति देती है।
 
-### 📱 Dompet LiMeiHua Lightning
-
-Dompet cryptocurrency multi-platform komprehensif yang mendukung Bitcoin (BTC), Tether (USDT), dan token Taproot Assets di Lightning Network.
-
-**Platform yang didukung:**
-- 🌐 Web (React + TypeScript)
-- 📱 Seluler (React Native - iOS/Android)
-- 🖥️ Desktop (Electron - Windows/Mac/Linux)
-
-### ✨ Fitur
-
-- **Dukungan multi-mata uang**: BTC, USDT, dan semua token Taproot Assets
-- **Integrasi Lightning Network**: Transaksi cepat dan biaya rendah
-- **Manajemen dompet yang aman**: Buat dan kelola beberapa dompet
-- **Dukungan kode QR**: Berbagi dan menerima pembayaran dengan mudah
-- **Riwayat transaksi**: Pelacakan transaksi lengkap
-- **Buku alamat**: Simpan dan kelola alamat penerima
-- **Nilai tukar**: Nilai tukar cryptocurrency real-time
-- **Estimasi biaya**: Perhitungan biaya yang transparan
-- **Lintas platform**: Pengalaman mulus di semua perangkat
+**मुख्य विशेषताएं:**
+- कस्टमाइज़्ड Taproot Assets टोकन बनाएं
+- टोकन आपूर्ति प्रबंधित करें (निश्चित, मिंटेबल, बर्नेबल)
+- गैस शुल्क और लेनदेन लागत की गणना करें
+- Lightning Network पर टोकन भेजें और प्राप्त करें
+- मल्टी-प्लेटफॉर्म समर्थन (Web, Mobile, Desktop)
+- बेहतर सुरक्षा के लिए World ID एकीकरण
+- Airdrop वितरण प्रणाली
+- Payment Gateway एकीकरण
+- Lightning Node प्रबंधन
 
 ---
 
-## Bahasa Melayu
+### 中文 (Chinese Simplified Documentation)
+**LiMeiHua Taproot Assets** 是一个现代金融基础设施平台，旨在为李美华奶奶支持大规模资金流动。这个综合系统使用户能够在比特币闪电网络上创建、管理和交易 Taproot Assets 代币。
 
-### 📱 Dompet LiMeiHua Lightning
-
-Dompet mata wang kripto pelbagai platform yang komprehensif menyokong Bitcoin (BTC), Tether (USDT), dan token Taproot Assets di Lightning Network.
-
-**Platform yang disokong:**
-- 🌐 Web (React + TypeScript)
-- 📱 Mudah alih (React Native - iOS/Android)
-- 🖥️ Desktop (Electron - Windows/Mac/Linux)
-
-### ✨ Ciri-ciri
-
-- **Sokongan pelbagai mata wang**: BTC, USDT, dan semua token Taproot Assets
-- **Integrasi Rangkaian Lightning**: Transaksi pantas dan kos rendah
-- **Pengurusan dompet yang selamat**: Buat dan urus pelbagai dompet
-- **Sokongan kod QR**: Berkongsi dan menerima pembayaran dengan mudah
-- **Sejarah transaksi**: Penjejakan transaksi lengkap
-- **Buku alamat**: Simpan dan urus alamat penerima
-- **Kadar pertukaran**: Kadar mata wang kripto masa nyata
-- **Anggaran yuran**: Pengiraan yuran yang telus
-- **Merentas platform**: Pengalaman lancar di semua peranti
+**主要功能：**
+- 创建自定义 Taproot Assets 代币
+- 管理代币供应（固定、可铸造、可销毁）
+- 计算燃气费和交易成本
+- 在闪电网络上发送和接收代币
+- 多平台支持（Web、Mobile、Desktop）
+- World ID 集成以增强安全性
+- Airdrop 分发系统
+- Payment Gateway 集成
+- Lightning Node 管理
 
 ---
 
-## Türkçe
+### 日本語 (Japanese Documentation)
+**LiMeiHua Taproot Assets** は、李美華おばあちゃんのための大規模な資金流を支援するために設計された最新の金融インフラストラクチャプラットフォームです。この包括的なシステムにより、ユーザーはビットコインライトニングネットワーク上で Taproot Assets トークンを作成、管理、および取引できます。
 
-### 📱 LiMeiHua Lightning Cüzdan
-
-Bitcoin (BTC), Tether (USDT) ve Lightning Network üzerinde Taproot Assets jetonlarını destekleyen kapsamlı bir çok platformlu kripto para cüzdanı.
-
-**Desteklenen Platformlar:**
-- 🌐 Web (React + TypeScript)
-- 📱 Mobil (React Native - iOS/Android)
-- 🖥️ Masaüstü (Electron - Windows/Mac/Linux)
-
-### ✨ Özellikler
-
-- **Çok para birimi desteği**: BTC, USDT ve tüm Taproot Assets jetonları
-- **Lightning Network entegrasyonu**: Hızlı ve düşük maliyetli işlemler
-- **Güvenli cüzdan yönetimi**: Birden fazla cüzdan oluşturun ve yönetin
-- **QR Kodu desteği**: Kolay ödeme paylaşımı ve alma
-- **İşlem geçmişi**: Tam işlem takibi
-- **Adres defteri**: Alıcı adreslerini kaydedin ve yönetin
-- **Döviz kurları**: Gerçek zamanlı kripto para kurları
-- **Ücret tahmini**: Şeffaf ücret hesaplaması
-- **Çok platformlu**: Tüm cihazlarda sorunsuz deneyim
+**主な機能：**
+- カスタマイズされた Taproot Assets トークンを作成
+- トークン供給を管理（固定、ミント可能、バーン可能）
+- ガス代と取引コストを計算
+- ライトニングネットワークでトークンを送受信
+- マルチプラットフォーム対応（Web、Mobile、Desktop）
+- セキュリティ強化のための World ID 統合
+- Airdrop 配布システム
+- Payment Gateway 統合
+- Lightning Node 管理
 
 ---
 
-## Italiano
+### 한국어 (Korean Documentation)
+**LiMeiHua Taproot Assets** 는 이미화 할머니를 위한 대규모 자금 흐름을 지원하기 위해 설계된 현대적 금융 인프라 플랫폼입니다. 이 포괄적인 시스템을 통해 사용자는 비트코인 라이트닝 네트워크에서 Taproot Assets 토큰을 생성, 관리 및 거래할 수 있습니다.
 
-### 📱 Portafoglio LiMeiHua Lightning
-
-Un portafoglio di criptovalute multi-piattaforma completo che supporta Bitcoin (BTC), Tether (USDT) e token Taproot Assets su Lightning Network.
-
-**Piattaforme supportate:**
-- 🌐 Web (React + TypeScript)
-- 📱 Mobile (React Native - iOS/Android)
-- 🖥️ Desktop (Electron - Windows/Mac/Linux)
-
-### ✨ Caratteristiche
-
-- **Supporto multi-valuta**: BTC, USDT e tutti i token Taproot Assets
-- **Integrazione Lightning Network**: Transazioni veloci e a basso costo
-- **Gestione sicura del portafoglio**: Crea e gestisci più portafogli
-- **Supporto codice QR**: Condivisione e ricezione facili dei pagamenti
-- **Cronologia delle transazioni**: Tracciamento completo delle transazioni
-- **Rubrica indirizzi**: Salva e gestisci gli indirizzi dei destinatari
-- **Tassi di cambio**: Tassi di criptovaluta in tempo reale
-- **Stima delle commissioni**: Calcolo trasparente delle commissioni
-- **Multipiattaforma**: Esperienza senza soluzione di continuità su tutti i dispositivi
+**주요 기능:**
+- 맞춤형 Taproot Assets 토큰 생성
+- 토큰 공급 관리 (고정, 발행 가능, 소각 가능)
+- 가스 수수료 및 거래 비용 계산
+- 라이트닝 네트워크에서 토큰 송수신
+- 다중 플랫폼 지원 (Web, Mobile, Desktop)
+- 향상된 보안을 위한 World ID 통합
+- Airdrop 배포 시스템
+- Payment Gateway 통합
+- Lightning Node 관리
 
 ---
 
-## Nederlands
+### Español (Spanish Documentation)
+**LiMeiHua Taproot Assets** es una plataforma moderna de infraestructura financiera diseñada para apoyar el flujo masivo de dinero para la abuela LiMeiHua. Este sistema integral permite a los usuarios crear, gestionar e intercambiar tokens Taproot Assets en la red Bitcoin Lightning Network.
 
-### 📱 LiMeiHua Lightning Portemonnee
-
-Een uitgebreide multi-platform cryptocurrency portemonnee die Bitcoin (BTC), Tether (USDT) en Taproot Assets tokens op Lightning Network ondersteunt.
-
-**Ondersteunde platforms:**
-- 🌐 Web (React + TypeScript)
-- 📱 Mobiel (React Native - iOS/Android)
-- 🖥️ Desktop (Electron - Windows/Mac/Linux)
-
-### ✨ Functies
-
-- **Ondersteuning voor meerdere valuta's**: BTC, USDT en alle Taproot Assets tokens
-- **Lightning Network integratie**: Snelle en goedkope transacties
-- **Veilig portemonnee beheer**: Maak en beheer meerdere portemonnees
-- **QR-code ondersteuning**: Gemakkelijk betaaldelen en ontvangen
-- **Transactiegeschiedenis**: Volledige transactiebijhoudingvolledige
-- **Adresboek**: Sla ontvangstadressen op en beheer deze
-- **Wisselkoersen**: Realtime cryptocurrency koersen
-- **Geschatte vergoedingen**: Transparante vergoedingsberekening
-- **Platformoverschrijdend**: Naadloze ervaring op alle apparaten
+**Características principales:**
+- Crear tokens Taproot Assets personalizados
+- Gestionar el suministro de tokens (fijo, acuñable, quemable)
+- Calcular tarifas de gas y costos de transacción
+- Enviar y recibir tokens en Lightning Network
+- Soporte multiplataforma (Web, Mobile, Desktop)
+- Integración de World ID para mayor seguridad
+- Sistema de distribución de Airdrop
+- Integración de Payment Gateway
+- Gestión de Lightning Node
 
 ---
 
-## Polski
+### Français (French Documentation)
+**LiMeiHua Taproot Assets** est une plateforme d'infrastructure financière moderne conçue pour soutenir le flux massif d'argent pour la grand-mère LiMeiHua. Ce système complet permet aux utilisateurs de créer, gérer et échanger des jetons Taproot Assets sur le réseau Bitcoin Lightning Network.
 
-### 📱 Portfel LiMeiHua Lightning
-
-Kompleksowy portfel kryptowalut multi-platformowy obsługujący Bitcoin (BTC), Tether (USDT) i tokeny Taproot Assets w sieci Lightning Network.
-
-**Obsługiwane platformy:**
-- 🌐 Web (React + TypeScript)
-- 📱 Mobilny (React Native - iOS/Android)
-- 🖥️ Desktop (Electron - Windows/Mac/Linux)
-
-### ✨ Funkcje
-
-- **Obsługa wielu walut**: BTC, USDT i wszystkie tokeny Taproot Assets
-- **Integracja Lightning Network**: Szybkie i tanie transakcje
-- **Bezpieczne zarządzanie portfelem**: Twórz i zarządzaj wieloma portfelami
-- **Obsługa kodów QR**: Łatwe udostępnianie i odbieranie płatności
-- **Historia transakcji**: Pełne śledzenie transakcji
-- **Książka adresowa**: Zapisuj i zarządzaj adresami odbiorców
-- **Kursy wymiany**: Kursy kryptowalut w czasie rzeczywistym
-- **Szacowanie opłat**: Przejrzyste obliczanie opłat
-- **Wieloplatformowy**: Bezproblemowe doświadczenie na wszystkich urządzeniach
+**Caractéristiques principales:**
+- Créer des jetons Taproot Assets personnalisés
+- Gérer l'approvisionnement en jetons (fixe, frappable, brûlable)
+- Calculer les frais de gaz et les coûts de transaction
+- Envoyer et recevoir des jetons sur Lightning Network
+- Support multi-plateforme (Web, Mobile, Desktop)
+- Intégration de World ID pour une sécurité renforcée
+- Système de distribution d'Airdrop
+- Intégration de Payment Gateway
+- Gestion des nœuds Lightning
 
 ---
 
-## Svenska
+### Deutsch (German Documentation)
+**LiMeiHua Taproot Assets** ist eine moderne Finanzinfrastruktur-Plattform, die entwickelt wurde, um den massiven Geldfluss für Großmutter LiMeiHua zu unterstützen. Dieses umfassende System ermöglicht es Benutzern, Taproot Assets-Token im Bitcoin Lightning Network zu erstellen, zu verwalten und zu handeln.
 
-### 📱 LiMeiHua Lightning Plånbok
-
-En omfattande multi-plattforms kryptovalutaplånbok som stöder Bitcoin (BTC), Tether (USDT) och Taproot Assets-tokens på Lightning Network.
-
-**Plattformar som stöds:**
-- 🌐 Webb (React + TypeScript)
-- 📱 Mobil (React Native - iOS/Android)
-- 🖥️ Skrivbord (Electron - Windows/Mac/Linux)
-
-### ✨ Funktioner
-
-- **Flervalsutastöd**: BTC, USDT och alla Taproot Assets-tokens
-- **Lightning Network-integration**: Snabba och billiga transaktioner
-- **Säker plånbokshantering**: Skapa och hantera flera plånböcker
-- **QR-kodstöd**: Enkel betalningsdelning och mottagning
-- **Transaktionshistorik**: Fullständig transaktionsspårning
-- **Adressbok**: Spara och hantera mottagaradresser
-- **Växelkurser**: Realtidskryptovalutakurser
-- **Avgiftsuppskattning**: Transparent avgiftsberäkning
-- **Plattformsoberoende**: Sömlös upplevelse på alla enheter
+**Hauptmerkmale:**
+- Erstellen Sie benutzerdefinierte Taproot Assets-Token
+- Verwalten Sie das Token-Angebot (fest, prägbar, verbrennbar)
+- Berechnen Sie Gasgebühren und Transaktionskosten
+- Senden und empfangen Sie Token im Lightning Network
+- Multi-Plattform-Unterstützung (Web, Mobile, Desktop)
+- World ID-Integration für erhöhte Sicherheit
+- Airdrop-Verteilungssystem
+- Payment Gateway-Integration
+- Lightning Node-Verwaltung
 
 ---
 
-## Українська
+### Português (Portuguese Documentation)
+**LiMeiHua Taproot Assets** é uma plataforma de infraestrutura financeira moderna projetada para suportar o fluxo massivo de dinheiro para a avó LiMeiHua. Este sistema abrangente permite que os usuários criem, gerenciem e negociem tokens Taproot Assets na rede Bitcoin Lightning Network.
 
-### 📱 LiMeiHua Lightning Гаманець
-
-Комплексний кросплатформний гаманець криптовалют, що підтримує Bitcoin (BTC), Tether (USDT) та токени Taproot Assets у мережі Lightning Network.
-
-**Підтримувані платформи:**
-- 🌐 Веб (React + TypeScript)
-- 📱 Мобільний (React Native - iOS/Android)
-- 🖥️ Робочий стіл (Electron - Windows/Mac/Linux)
-
-### ✨ Функції
-
-- **Підтримка кількох валют**: BTC, USDT та всі токени Taproot Assets
-- **Інтеграція Lightning Network**: Швидкі та дешеві транзакції
-- **Безпечне управління гаманцем**: Створюйте та керуйте кількома гаманцями
-- **Підтримка QR-кодів**: Легке спільне використання та отримання платежів
-- **Історія транзакцій**: Повне відстеження транзакцій
-- **Адресна книга**: Збережіть та керуйте адресами одержувачів
-- **Курси обміну**: Курси криптовалют у реальному часі
-- **Оцінка комісій**: Прозоре розрахування комісій
-- **Кросплатформність**: Безпроблемний досвід на всіх пристроях
+**Principais recursos:**
+- Criar tokens Taproot Assets personalizados
+- Gerenciar oferta de tokens (fixo, cunhável, queimável)
+- Calcular taxas de gás e custos de transação
+- Enviar e receber tokens na Lightning Network
+- Suporte multiplataforma (Web, Mobile, Desktop)
+- Integração de World ID para segurança aprimorada
+- Sistema de distribuição de Airdrop
+- Integração de Payment Gateway
+- Gerenciamento de Lightning Node
 
 ---
 
-## Čeština
+### العربية (Arabic Documentation)
+**LiMeiHua Taproot Assets** هي منصة بنية تحتية مالية حديثة مصممة لدعم تدفق أموال ضخم لجدة LiMeiHua. يسمح هذا النظام الشامل للمستخدمين بإنشاء وإدارة وتداول رموز Taproot Assets على شبكة Bitcoin Lightning Network.
 
-### 📱 LiMeiHua Lightning Peněženka
-
-Komplexní multiplatformní peněženka kryptoměn podporující Bitcoin (BTC), Tether (USDT) a tokeny Taproot Assets v síti Lightning Network.
-
-**Podporované platformy:**
-- 🌐 Web (React + TypeScript)
-- 📱 Mobilní (React Native - iOS/Android)
-- 🖥️ Desktop (Electron - Windows/Mac/Linux)
-
-### ✨ Funkce
-
-- **Podpora více měn**: BTC, USDT a všechny tokeny Taproot Assets
-- **Integrace Lightning Network**: Rychlé a levné transakce
-- **Bezpečná správa peněženky**: Vytvářejte a spravujte více peněženek
-- **Podpora QR kódů**: Snadné sdílení a příjem plateb
-- **Historie transakcí**: Úplné sledování transakcí
-- **Adresář**: Ukládejte a spravujte adresy příjemců
-- **Směnné kurzy**: Kurzy kryptoměn v reálném čase
-- **Odhad poplatků**: Transparentní výpočet poplatků
-- **Multiplatformní**: Bezproblémové prostředí na všech zařízeních
+**المميزات الرئيسية:**
+- إنشاء رموز Taproot Assets مخصصة
+- إدارة عرض الرموز (ثابت، قابل للسك، قابل للحرق)
+- حساب رسوم الغاز وتكاليف المعاملات
+- إرسال واستقبال الرموز على Lightning Network
+- دعم متعدد المنصات (Web, Mobile, Desktop)
+- تكامل World ID لأمان محسّن
+- نظام توزيع Airdrop
+- تكامل Payment Gateway
+- إدارة عقدة Lightning
 
 ---
 
-## Română
+### Türkçe (Turkish Documentation)
+**LiMeiHua Taproot Assets**, LiMeiHua Büyükanne için büyük para akışını desteklemek üzere tasarlanmış modern bir finansal altyapı platformudur. Bu kapsamlı sistem, kullanıcıların Bitcoin Lightning Network üzerinde Taproot Assets jetonları oluşturmasına, yönetmesine ve ticaretini yapmasına olanak tanır.
 
-### 📱 Portofel LiMeiHua Lightning
-
-Un portofel de criptomonede multi-platformă cuprinzător care suportă Bitcoin (BTC), Tether (USDT) și tokenuri Taproot Assets pe Lightning Network.
-
-**Platforme acceptate:**
-- 🌐 Web (React + TypeScript)
-- 📱 Mobil (React Native - iOS/Android)
-- 🖥️ Desktop (Electron - Windows/Mac/Linux)
-
-### ✨ Caracteristici
-
-- **Suport multi-valută**: BTC, USDT și toate tokenurile Taproot Assets
-- **Integrare Lightning Network**: Tranzacții rapide și ieftine
-- **Gestionare sigură a portofelului**: Creați și gestionați mai multe portofele
-- **Suport cod QR**: Partajare și primire ușoară a plăților
-- **Istoric tranzacții**: Urmărire completă a tranzacțiilor
-- **Carnet de adrese**: Salvați și gestionați adresele destinatarilor
-- **Cursuri de schimb**: Cursuri de criptomonede în timp real
-- **Estimare taxe**: Calcul transparent al taxelor
-- **Multi-platformă**: Experiență fără probleme pe toate dispozitivele
+**Ana Özellikler:**
+- Özelleştirilmiş Taproot Assets jetonları oluşturun
+- Jeton arzını yönetin (sabit, basılabilir, yakılabilir)
+- Gaz ücretleri ve işlem maliyetlerini hesaplayın
+- Lightning Network üzerinde jetonları gönderin ve alın
+- Çok platformlu destek (Web, Mobile, Desktop)
+- Geliştirilmiş güvenlik için World ID entegrasyonu
+- Airdrop dağıtım sistemi
+- Payment Gateway entegrasyonu
+- Lightning Node yönetimi
 
 ---
 
-## Ελληνικά
+### Italiano (Italian Documentation)
+**LiMeiHua Taproot Assets** è una piattaforma di infrastruttura finanziaria moderna progettata per supportare il massiccio flusso di denaro per la nonna LiMeiHua. Questo sistema completo consente agli utenti di creare, gestire e scambiare token Taproot Assets sulla rete Bitcoin Lightning Network.
 
-### 📱 Πορτοφόλι LiMeiHua Lightning
-
-Ένα ολοκληρωμένο πολυπλατφόρμιο πορτοφόλι κρυπτονομισμάτων που υποστηρίζει Bitcoin (BTC), Tether (USDT) και token Taproot Assets στο Lightning Network.
-
-**Υποστηριζόμενες πλατφόρμες:**
-- 🌐 Web (React + TypeScript)
-- 📱 Κινητό (React Native - iOS/Android)
-- 🖥️ Επιτραπέζιος (Electron - Windows/Mac/Linux)
-
-### ✨ Χαρακτηριστικά
-
-- **Υποστήριξη πολλαπλών νομισμάτων**: BTC, USDT και όλα τα token Taproot Assets
-- **Ενσωμάτωση Lightning Network**: Γρήγορες και φθηνές συναλλαγές
-- **Ασφαλής διαχείριση πορτοφολιού**: Δημιουργήστε και διαχειριστείτε πολλαπλά πορτοφόλια
-- **Υποστήριξη κωδικού QR**: Εύκολη κοινή χρήση και λήψη πληρωμών
-- **Ιστορικό συναλλαγών**: Πλήρης παρακολούθηση συναλλαγών
-- **Βιβλίο διευθύνσεων**: Αποθηκεύστε και διαχειριστείτε τις διευθύνσεις των παραληπτών
-- **Συναλλαγματικές ισοτιμίες**: Τιμές κρυπτονομισμάτων σε πραγματικό χρόνο
-- **Εκτίμηση τελών**: Διαφανής υπολογισμός τελών
-- **Πολυπλατφόρμιο**: Απρόσκοπτη εμπειρία σε όλες τις συσκευές
+**Caratteristiche principali:**
+- Crea token Taproot Assets personalizzati
+- Gestisci l'offerta di token (fisso, coniabile, bruciabile)
+- Calcola le commissioni del gas e i costi delle transazioni
+- Invia e ricevi token su Lightning Network
+- Supporto multipiattaforma (Web, Mobile, Desktop)
+- Integrazione di World ID per una sicurezza migliorata
+- Sistema di distribuzione Airdrop
+- Integrazione di Payment Gateway
+- Gestione dei nodi Lightning
 
 ---
 
-## עברית
+### Nederlands (Dutch Documentation)
+**LiMeiHua Taproot Assets** is een modern financieel infrastructuurplatform dat is ontworpen ter ondersteuning van de massale geldstroom voor oma LiMeiHua. Dit uitgebreide systeem stelt gebruikers in staat Taproot Assets-tokens op het Bitcoin Lightning Network te creëren, beheren en verhandelen.
 
-### 📱 ארנק LiMeiHua Lightning
-
-ארנק קריפטו-מטבע רב-פלטפורמי מקיף התומך ב-Bitcoin (BTC), Tether (USDT) ו-token Taproot Assets ברשת Lightning Network.
-
-**פלטפורמות נתמכות:**
-- 🌐 אינטרנט (React + TypeScript)
-- 📱 נייד (React Native - iOS/Android)
-- 🖥️ שולחן עבודה (Electron - Windows/Mac/Linux)
-
-### ✨ תכונות
-
-- **תמיכה בעמלות מרובות**: BTC, USDT וכל token Taproot Assets
-- **שילוב Lightning Network**: עסקאות מהירות וזולות
-- **ניהול ארנק מאובטח**: צור וניהול ארנקים מרובים
-- **תמיכת קוד QR**: שיתוף וקבלת תשלומים קלים
-- **היסטוריית עסקאות**: מעקב עסקאות מלא
-- **ספר כתובות**: שמור וניהול כתובות של מקבלים
-- **שערי חליפין**: שערי קריפטו-מטבע בזמן אמת
-- **הערכת עמלות**: חישוב עמלות שקוף
-- **רב-פלטפורמי**: חוויה חלקה בכל המכשירים
+**Hoofdkenmerken:**
+- Maak aangepaste Taproot Assets-tokens
+- Beheer tokenvoorraad (vast, mintable, brandbaar)
+- Bereken gaskosten en transactiekosten
+- Verzend en ontvang tokens op Lightning Network
+- Ondersteuning voor meerdere platforms (Web, Mobile, Desktop)
+- World ID-integratie voor verbeterde beveiliging
+- Airdrop-distributiesysteem
+- Payment Gateway-integratie
+- Lightning Node-beheer
 
 ---
 
-## বাংলা
+### Polski (Polish Documentation)
+**LiMeiHua Taproot Assets** to nowoczesna platforma infrastruktury finansowej zaprojektowana do wspierania masywnego przepływu pieniędzy dla babci LiMeiHua. Ten kompleksowy system umożliwia użytkownikom tworzenie, zarządzanie i handel tokenami Taproot Assets w sieci Bitcoin Lightning Network.
 
-### 📱 LiMeiHua Lightning ওয়ালেট
-
-একটি ব্যাপক মাল্টি-প্ল্যাটফর্ম ক্রিপ্টোকারেন্সি ওয়ালেট যা Bitcoin (BTC), Tether (USDT) এবং Lightning Network-এ Taproot Assets টোকেন সমর্থন করে।
-
-**সমর্থিত প্ল্যাটফর্ম:**
-- 🌐 ওয়েব (React + TypeScript)
-- 📱 মোবাইল (React Native - iOS/Android)
-- 🖥️ ডেস্কটপ (Electron - Windows/Mac/Linux)
-
-### ✨ বৈশিষ্ট্য
-
-- **মাল্টি-কারেন্সি সমর্থন**: BTC, USDT এবং সমস্ত Taproot Assets টোকেন
-- **Lightning Network একীকরণ**: দ্রুত এবং কম খরচের লেনদেন
-- **নিরাপদ ওয়ালেট ম্যানেজমেন্ট**: একাধিক ওয়ালেট তৈরি এবং পরিচালনা করুন
-- **QR কোড সমর্থন**: সহজ পেমেন্ট শেয়ারিং এবং গ্রহণ
-- **লেনদেনের ইতিহাস**: সম্পূর্ণ লেনদেন ট্র্যাকিং
-- **ঠিকানা বই**: প্রাপকের ঠিকানা সংরক্ষণ এবং পরিচালনা করুন
-- **বিনিময় হার**: রিয়েল-টাইম ক্রিপ্টোকারেন্সি হার
-- **ফি অনুমান**: স্বচ্ছ ফি গণনা
-- **ক্রস-প্ল্যাটফর্ম**: সমস্ত ডিভাইসে নিরবচ্ছিন্ন অভিজ্ঞতা
+**Główne cechy:**
+- Twórz dostosowane tokeny Taproot Assets
+- Zarządzaj podażą tokenów (stała, możliwa do wybicia, możliwa do spalenia)
+- Oblicz opłaty za gaz i koszty transakcji
+- Wysyłaj i odbieraj tokeny w sieci Lightning Network
+- Obsługa wielu platform (Web, Mobile, Desktop)
+- Integracja World ID w celu zwiększonego bezpieczeństwa
+- System dystrybucji Airdrop
+- Integracja Payment Gateway
+- Zarządzanie węzłem Lightning
 
 ---
 
-## Filipino
+### Svenska (Swedish Documentation)
+**LiMeiHua Taproot Assets** är en modern finansiell infrastrukturplattform utformad för att stödja massiv penningflöde för mormor LiMeiHua. Detta omfattande system gör det möjligt för användare att skapa, hantera och handla Taproot Assets-tokens på Bitcoin Lightning Network.
 
-### 📱 LiMeiHua Lightning Wallet
-
-Isang komprehensibong multi-platform cryptocurrency wallet na sumusuporta sa Bitcoin (BTC), Tether (USDT), at Taproot Assets tokens sa Lightning Network.
-
-**Mga suportadong platform:**
-- 🌐 Web (React + TypeScript)
-- 📱 Mobile (React Native - iOS/Android)
-- 🖥️ Desktop (Electron - Windows/Mac/Linux)
-
-### ✨ Mga Tampok
-
-- **Multi-currency support**: BTC, USDT at lahat ng Taproot Assets tokens
-- **Lightning Network integration**: Mabilis at murang transaksyon
-- **Secure wallet management**: Lumikha at pamahalaan ang maraming wallet
-- **QR Code support**: Madaling pagbabahagi at pagtanggap ng pagbabayad
-- **Transaction history**: Kumpletong transaction tracking
-- **Address book**: I-save at pamahalaan ang mga address ng tumatanggap
-- **Exchange rates**: Real-time cryptocurrency rates
-- **Fee estimation**: Transparent na pagkalkula ng bayad
-- **Cross-platform**: Seamless na karanasan sa lahat ng device
+**Huvudfunktioner:**
+- Skapa anpassade Taproot Assets-tokens
+- Hantera tokenutbud (fast, präglingsbar, bränbar)
+- Beräkna gasavgifter och transaktionskostnader
+- Skicka och ta emot tokens på Lightning Network
+- Stöd för flera plattformar (Web, Mobile, Desktop)
+- World ID-integration för förbättrad säkerhet
+- Airdrop-distributionssystem
+- Payment Gateway-integration
+- Lightning Node-hantering
 
 ---
 
-## 🔒 Security & Privacy
+### Українська (Ukrainian Documentation)
+**LiMeiHua Taproot Assets** - це сучасна платформа фінансової інфраструктури, розроблена для підтримки масивного потоку грошей для бабусі LiMeiHua. Ця комплексна система дозволяє користувачам створювати, керувати та торгувати токенами Taproot Assets у мережі Bitcoin Lightning Network.
 
-- **Non-custodial**: You maintain full control of your private keys
-- **End-to-end encryption**: All sensitive data is encrypted
-- **Open source**: Code is transparent and auditable
-- **No tracking**: We don't collect personal data
-- **Hardware wallet support**: Compatible with Ledger, Trezor, etc.
-
-## 📞 Support
-
-For issues, questions, or feature requests:
-- 📧 Email: support@limeihua-wallet.com
-- 🐛 GitHub Issues: [Report a bug](https://github.com/kanutsanan1988/LiMeiHua-Lightning-Wallet/issues)
-- 💬 Community: [Join our Discord](https://discord.gg/limeihua)
-
-## 📄 License
-
-MIT License - See LICENSE file for details
-
-## 👏 Dedication
-
-This software is dedicated to **LiMeiHua Grand Mother (ท่านผู้เฒ่าหลี่เหมยฮัว)** as a modern financial infrastructure to support massive money flow.
-
-Created by **Mr. Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา)**
-
-🔗 [Visit Creator's GPT](https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna)
+**Основні функції:**
+- Створюйте спеціалізовані токени Taproot Assets
+- Керуйте пропозицією токенів (фіксована, карбована, спалювана)
+- Обчислюйте комісії за газ та вартість транзакцій
+- Надсилайте та отримуйте токени в мережі Lightning Network
+- Підтримка кількох платформ (Web, Mobile, Desktop)
+- Інтеграція World ID для посиленої безпеки
+- Система розповсюдження Airdrop
+- Інтеграція Payment Gateway
+- Управління вузлом Lightning
 
 ---
 
-**Happy Lightning Transactions! ⚡💰**
+### Čeština (Czech Documentation)
+**LiMeiHua Taproot Assets** je moderní platforma finanční infrastruktury navržená tak, aby podporovala masivní tok peněz pro babičku LiMeiHua. Tento komplexní systém umožňuje uživatelům vytvářet, spravovat a obchodovat s tokeny Taproot Assets v síti Bitcoin Lightning Network.
+
+**Hlavní funkce:**
+- Vytvářejte přizpůsobené tokeny Taproot Assets
+- Spravujte nabídku tokenů (pevná, razitelná, spalitelná)
+- Vypočítejte poplatky za plyn a náklady na transakce
+- Odesílajte a přijímejte tokeny v síti Lightning Network
+- Podpora více platforem (Web, Mobile, Desktop)
+- Integrace World ID pro zvýšenou bezpečnost
+- Systém distribuce Airdrop
+- Integrace Payment Gateway
+- Správa uzlu Lightning
+
+---
+
+### Română (Romanian Documentation)
+**LiMeiHua Taproot Assets** este o platformă modernă de infrastructură financiară concepută pentru a sprijini fluxul masiv de bani pentru bunica LiMeiHua. Acest sistem cuprinzător permite utilizatorilor să creeze, să gestioneze și să tranzacționeze jetoane Taproot Assets pe rețeaua Bitcoin Lightning Network.
+
+**Caracteristici principale:**
+- Creați jetoane Taproot Assets personalizate
+- Gestionați oferta de jetoane (fix, mintabil, ardibil)
+- Calculați taxele de gaz și costurile tranzacțiilor
+- Trimiteți și primiți jetoane pe Lightning Network
+- Suport multi-platformă (Web, Mobile, Desktop)
+- Integrare World ID pentru securitate îmbunătățită
+- Sistem de distribuție Airdrop
+- Integrare Payment Gateway
+- Gestionarea nodului Lightning
+
+---
+
+### Ελληνικά (Greek Documentation)
+**LiMeiHua Taproot Assets** είναι μια σύγχρονη πλατφόρμα χρηματοοικονομικής υποδομής σχεδιασμένη για να υποστηρίξει τη μαζική ροή χρημάτων για τη γιαγιά LiMeiHua. Αυτό το ολοκληρωμένο σύστημα επιτρέπει στους χρήστες να δημιουργούν, να διαχειρίζονται και να διαπραγματεύονται tokens Taproot Assets στο δίκτυο Bitcoin Lightning Network.
+
+**Κύρια χαρακτηριστικά:**
+- Δημιουργήστε προσαρμοσμένα tokens Taproot Assets
+- Διαχειριστείτε την προσφορά tokens (σταθερή, κόπιμη, καύσιμη)
+- Υπολογίστε τα τέλη αερίου και τα κόστη συναλλαγών
+- Στείλτε και λάβετε tokens στο Lightning Network
+- Υποστήριξη πολλαπλών πλατφορμών (Web, Mobile, Desktop)
+- Ενσωμάτωση World ID για ενισχυμένη ασφάλεια
+- Σύστημα διανομής Airdrop
+- Ενσωμάτωση Payment Gateway
+- Διαχείριση κόμβου Lightning
+
+---
+
+### עברית (Hebrew Documentation)
+**LiMeiHua Taproot Assets** היא פלטפורמת תשתית פיננסית מודרנית שתוכננה לתמוך בזרימת כספים거대ית לסבתא LiMeiHua. מערכת זו המקיפה מאפשרת למשתמשים ליצור, לנהל ולסחור בטוקנים של Taproot Assets ברשת Bitcoin Lightning Network.
+
+**תכונות עיקריות:**
+- יצירת טוקנים מותאמים של Taproot Assets
+- ניהול היצע של טוקנים (קבוע, שניתן לטבוע, שניתן לשרוף)
+- חישוב דמי גז וביצוע עלויות עסקה
+- שליחה וקבלת טוקנים ברשת Lightning Network
+- תמיכה בפלטפורמות מרובות (Web, Mobile, Desktop)
+- שילוב World ID לאבטחה משופרת
+- מערכת הפצה של Airdrop
+- שילוב Payment Gateway
+- ניהול צומת Lightning
+
+---
+
+### বাংলা (Bengali Documentation)
+**LiMeiHua Taproot Assets** একটি আধুনিক আর্থিক অবকাঠামো প্ল্যাটফর্ম যা লীমেইহুয়া দাদির জন্য বিশাল অর্থ প্রবাহ সমর্থন করার জন্য ডিজাইন করা হয়েছে। এই ব্যাপক সিস্টেম ব্যবহারকারীদের বিটকয়েন লাইটনিং নেটওয়ার্কে ট্যাপরুট অ্যাসেট টোকেন তৈরি, পরিচালনা এবং বাণিজ্য করতে সক্ষম করে।
+
+**প্রধান বৈশিষ্ট্য:**
+- কাস্টমাইজড ট্যাপরুট অ্যাসেট টোকেন তৈরি করুন
+- টোকেন সরবরাহ পরিচালনা করুন (স্থির, মিন্টেবল, বার্নেবল)
+- গ্যাস ফি এবং লেনদেন খরচ গণনা করুন
+- লাইটনিং নেটওয়ার্কে টোকেন পাঠান এবং গ্রহণ করুন
+- মাল্টি-প্ল্যাটফর্ম সমর্থন (Web, Mobile, Desktop)
+- উন্নত নিরাপত্তার জন্য World ID ইন্টিগ্রেশন
+- এয়ারড্রপ বিতরণ সিস্টেম
+- পেমেন্ট গেটওয়ে ইন্টিগ্রেশন
+- লাইটনিং নোড ম্যানেজমেন্ট
+
+---
+
+### Kiswahili (Swahili Documentation)
+**LiMeiHua Taproot Assets** ni jukwaa la miundombinu ya fedha ya kisasa iliyoundwa kusaidia mtiririko mkubwa wa pesa kwa Nyanya LiMeiHua. Mfumo huu wa kina unaweza kuwezesha watumiaji kuunda, kudhibiti, na kuokolea tokens za Taproot Assets kwenye mtandao wa Bitcoin Lightning Network.
+
+**Sifa kuu:**
+- Kuunda tokens za Taproot Assets zilizobadilishwa
+- Kudhibiti usambazaji wa tokens (imara, inayoweza kusambazwa, inayoweza kuchoma)
+- Kuhesabu ada za gesi na gharama za miamala
+- Kutuma na kupokea tokens kwenye Lightning Network
+- Usaidizi wa jukwaa nyingi (Web, Mobile, Desktop)
+- Ujumuishaji wa World ID kwa usalama ulioboreswa
+- Mfumo wa usambazaji wa Airdrop
+- Ujumuishaji wa Payment Gateway
+- Usimamizi wa nodi ya Lightning
+
+---
+
+## 🎯 Project Overview
+
+This comprehensive project suite provides complete solutions for:
+
+1. **Token Creation & Management** - Create and manage Taproot Assets tokens
+2. **Payment Processing** - Accept payments in BTC, USDT, and custom tokens
+3. **Airdrop Distribution** - Distribute tokens to multiple recipients
+4. **Wallet Solutions** - Multi-platform wallet support
+5. **Bridge Services** - Connect ERC-20 and Taproot Assets
+6. **Node Management** - Operate Lightning Network nodes
+
+---
+
+## ✨ Features
+
+- ✅ 40+ Language Support
+- ✅ Multi-Platform (Web, Mobile, Desktop)
+- ✅ Lightning Network Integration
+- ✅ World ID Verification
+- ✅ Taproot Assets Protocol
+- ✅ Payment Gateway
+- ✅ Airdrop System
+- ✅ Node Management
+- ✅ Bridge Services
+- ✅ Real-time Updates
+
+---
+
+## 🚀 Getting Started
+
+1. Choose your preferred platform (Web, Mobile, or Desktop)
+2. Connect your Lightning Network wallet
+3. Create your first Taproot Assets token
+4. Start managing your digital assets
+5. Explore advanced features like airdrops and payment processing
+
+---
+
+## 💡 Use Cases
+
+- Token creation for projects
+- Payment processing for e-commerce
+- Airdrop campaigns
+- Wallet management
+- Cross-chain token bridging
+- Lightning Network node operation
+
+---
+
+## 🔧 Technical Stack
+
+- **Frontend:** React, Next.js, React Native, Electron
+- **Backend:** Node.js, Express, tRPC
+- **Smart Contracts:** Solidity
+- **Database:** MySQL/TiDB
+- **Authentication:** Manus OAuth, World ID
+- **API:** Taproot Assets Protocol, Lightning Labs
+
+---
+
+## 📊 Language Statistics
+
+| Region | Count | Languages |
+|--------|-------|-----------|
+| ASEAN | 9 | Thai, Lao, Burmese, Vietnamese, Khmer, Malay, Indonesian, Filipino, Tamil |
+| Other | 5 | Russian, Mongolian, Sinhala, Dzongkha, Nepali |
+| India | 21 | Hindi, Bengali, Telugu, Marathi, Tamil, Urdu, Gujarati, Kannada, Malayalam, Odia, Punjabi, Assamese, Maithili, Santali, Kashmiri, Nepali, Sindhi, Dogri, Manipuri, Bodo, Konkani |
+| Global | 20+ | English, Chinese, Japanese, Korean, Spanish, French, German, Portuguese, Arabic, Turkish, Italian, Dutch, Polish, Swedish, Ukrainian, Czech, Romanian, Greek, Hebrew, Swahili |
+| **TOTAL** | **40+** | **All languages listed above** |
+
+---
+
+## 🌐 Language Features
+
+✅ **Auto-Detection:** Automatically detects user's browser language
+✅ **40+ Languages:** Comprehensive language support
+✅ **Easy Switching:** Manual language selection available
+✅ **Persistent:** Language preference saved locally
+✅ **Fallback:** English fallback for all languages
+✅ **Full Documentation:** Complete documentation in all languages
+
+---
+
+**Dedicated to LiMeiHua Grand Mother (ท่านผู้เฒ่าหลี่เหมยฮัว)**
+
+Created by Mr. Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา)
+
+URL: https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
+
+---
+
+**© 2026 LiMeiHua. All Rights Reserved.**
